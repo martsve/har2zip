@@ -1,5 +1,7 @@
 # har2zip
-Converts a HAR file to a Zip file
+Converts a HAR file to a Zip file. 
+
+This only converts the contents of the requests into a combined zip file, and will not contain metadata like cookies and http headers.
 
 The HTTP Archive format, or HAR, is a JSON-formatted archive file format for logging of a web browser's interaction with a site. The common extension for these files is .har.
 
@@ -11,11 +13,7 @@ You can record your HTTP session using the Network tab in the Developer Tools in
 * Click on the Network tab
 * Look for a round button at the top left of the Network tab. Make sure it is red. If it is grey, click it once to start recording.
 * Check the box next to Preserve log
-* You can use the clear button (a circle with a diagonal line through it) right before trying to reproduce the issue to remove unnecessary header information
-* Reproduce the issue
 * Save the capture by right-clicking on the grid and choosing "Save as HAR with Content"
-
-
 
 # To build
 
